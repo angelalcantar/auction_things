@@ -1,0 +1,71 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        Go <a href="index.html">back</a>
+        <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="auctionItemAdd.js"></script>
+        <script type="text/javascript" src="auctionItemLoad.js"></script>
+    </head>
+<body>
+    
+          
+<h1>Welcome to Daily's Auctions</h1>
+<h3>You are in Clerk's View</h3>
+    
+    <p>You've successfully started a new auction!</p>
+    
+    <h4>Add an Auction Item</h4>
+    
+    
+    <table>
+        <form id="addAuctionItem" name="addAuctionItem">
+        <tr><th></th><th></th></tr>
+        <tr>
+            <td>Lot Number</td>
+            <td><input type = 'number' id = 'lot_num' name = "lot_num" size = "4" maxlength = "4"/></td> 
+        </tr>
+        <tr>
+            <td>Buyer ID</td>
+            <td><input type = 'number' id = 'buyer_id' name = "buyer_id" size = "3" maxlength="3" /></td>
+        </tr>
+        <tr>
+            <td>Item Description</td>
+            <td><input type = 'text' id = 'item_desc' name = "item_desc" size = "100"/></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type = 'number' id = 'quantity' name = "quantity" size = "5" maxlength = "5"/></td> 
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type = 'text' id = 'price' name = "price"/></td>
+        </tr>
+        <tr>
+            <td>Save</td>
+            <td><input type = "submit" name="submit" id="submit"/></td>
+        </tr>
+        </form>
+    </table>
+    <br/>
+    <table id="auction_item_result">
+        <thead>
+            <th>Lot Number</th>
+            <th>Buyer ID</th> 
+            <th>Item Description</th>
+            <th>Quanity</th>
+            <th>Price</th>
+            <th>Edit</th>
+        </thead>
+  <tbody>
+       <td id="lot_num_result"></td>
+        <td id="buyer_id_result"></td>
+        <td id="item_desc_result"></td>
+        <td id="quantity_result"></td>
+        <td id="price_result"></td>
+        <td>#</td>
+  </tbody>
+    </table>
+          
+
+</body>
+</html>
